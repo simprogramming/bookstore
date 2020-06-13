@@ -1,0 +1,10 @@
+
+<div>
+  <ol>
+    <% @books.each do |book| %>
+      <% if book.category == sociology %>
+        <li> <%= book.title %> </li>
+      <% end %>
+    <% end %>
+  </ol>
+</div>

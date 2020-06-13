@@ -1,0 +1,11 @@
+<h1 class="text-center my-5">List a new book</h1>
+
+<div class="container">
+  <%= simple_form_for(@book) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :picture %>
+    <%= f.input :category, collection: ['sociology', 'history', 'economy', 'business', 'fundamental', 'trading'] %>
+    <%= f.input :description %>
+    <%= f.submit %>
+  <% end %>
+</div>
